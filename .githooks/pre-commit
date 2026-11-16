@@ -1,0 +1,12 @@
+#!/bin/sh
+# Keep public history anonymous: only a GitHub noreply address may author commits here.
+email=$(git config user.email)
+
+case "$email" in
+  *@users.noreply.github.com) ;;
+  *)
+    echo "commit blocked: user.email is '$email'." >&2
+    echo "Run 'just git-setup' in this clone to use the anonymous identity." >&2
+    exit 1
+    ;;
+esac

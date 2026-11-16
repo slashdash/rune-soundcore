@@ -53,3 +53,9 @@ check:
 # Run the unit tests.
 test:
     cargo test
+
+# Point this clone at the anonymous identity and the repo's commit guard.
+git-setup:
+    git config user.name slashdash
+    git config user.email 1736840+slashdash@users.noreply.github.com
+    git config core.hooksPath .githooks

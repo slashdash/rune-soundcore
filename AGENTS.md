@@ -78,3 +78,7 @@ modules beside the code.
 - The project is attributed to "the rune-soundcore authors" (`NOTICE`, `Cargo.toml`, bundle
   copyright). Keep it anonymous: never add a real name, handle, home-directory path, email address
   or other PII.
+- Commits use the repo-local identity from `just git-setup` (`slashdash` and the GitHub noreply
+  address). `.githooks/pre-commit` rejects any author address that is not `@users.noreply.github.com`;
+  a fresh clone needs `just git-setup` before its first commit. Never set `user.email` to a personal
+  or company address here, and never put one in a tracked file.
