@@ -1,0 +1,575 @@
+{
+  "note": "Sample values for the README screenshots. Not real device data.",
+  "model": "SoundcoreA3947",
+  "categories": [
+    [
+      "soundModes",
+      [
+        [
+          "ambientSoundMode",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "NoiseCanceling",
+                "Transparency",
+                "Normal"
+              ],
+              "localizedOptions": [
+                "Noise Canceling",
+                "Transparency",
+                "Normal"
+              ]
+            },
+            "value": "Normal"
+          }
+        ],
+        [
+          "transparencyMode",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "FullyTransparent",
+                "VocalMode"
+              ],
+              "localizedOptions": [
+                "Fully Transparent",
+                "Vocal Mode"
+              ]
+            },
+            "value": "FullyTransparent"
+          }
+        ],
+        [
+          "noiseCancelingMode",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "Manual",
+                "Adaptive",
+                "Transportation"
+              ],
+              "localizedOptions": [
+                "Manual",
+                "Adaptive",
+                "Transportation"
+              ]
+            },
+            "value": "Adaptive"
+          }
+        ],
+        [
+          "transportationMode",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "Plane",
+                "Train",
+                "Bus",
+                "Car"
+              ],
+              "localizedOptions": [
+                "Plane",
+                "Train",
+                "Bus",
+                "Car"
+              ]
+            },
+            "value": "Plane"
+          }
+        ],
+        [
+          "manualNoiseCanceling",
+          {
+            "type": "i32Range",
+            "setting": {
+              "start": 1,
+              "end": 5,
+              "step": 1
+            },
+            "value": 5
+          }
+        ],
+        [
+          "adaptiveNoiseCanceling",
+          {
+            "type": "information",
+            "value": "0/5",
+            "translatedValue": "0/5"
+          }
+        ],
+        [
+          "windNoiseSuppression",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "environmentDetection",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ]
+      ]
+    ],
+    [
+      "equalizer",
+      [
+        [
+          "volumeAdjustments",
+          {
+            "type": "equalizer",
+            "setting": {
+              "bandHz": [
+                31,
+                62,
+                125,
+                250,
+                500,
+                1000,
+                2000,
+                4000,
+                8000,
+                16000
+              ],
+              "fractionDigits": 0,
+              "min": -6,
+              "max": 6
+            },
+            "readOnly": false,
+            "value": [
+              3,
+              2,
+              1,
+              0,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              2
+            ]
+          }
+        ]
+      ]
+    ],
+    [
+      "equalizerImportExport",
+      [
+        [
+          "importCustomEqualizerProfiles",
+          {
+            "type": "importString",
+            "confirmationMessage": "This will overwrite existing profiles that share the same names."
+          }
+        ],
+        [
+          "exportCustomEqualizerProfiles",
+          {
+            "type": "multiSelect",
+            "setting": {
+              "options": [],
+              "localizedOptions": []
+            },
+            "values": []
+          }
+        ],
+        [
+          "exportCustomEqualizerProfilesOutput",
+          {
+            "type": "information",
+            "value": "[]",
+            "translatedValue": "[]"
+          }
+        ]
+      ]
+    ],
+    [
+      "buttonConfiguration",
+      [
+        [
+          "leftSinglePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "PlayPause"
+          }
+        ],
+        [
+          "rightSinglePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "PlayPause"
+          }
+        ],
+        [
+          "leftDoublePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "NextSong"
+          }
+        ],
+        [
+          "rightDoublePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "NextSong"
+          }
+        ],
+        [
+          "leftLongPress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "AmbientSoundMode"
+          }
+        ],
+        [
+          "rightLongPress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": "AmbientSoundMode"
+          }
+        ],
+        [
+          "leftTriplePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": null
+          }
+        ],
+        [
+          "rightTriplePress",
+          {
+            "type": "optionalSelect",
+            "setting": {
+              "options": [
+                "VolumeUp",
+                "VolumeDown",
+                "PreviousSong",
+                "NextSong",
+                "AmbientSoundMode",
+                "VoiceAssistant",
+                "PlayPause"
+              ],
+              "localizedOptions": [
+                "Volume Up",
+                "Volume Down",
+                "Previous Song",
+                "Next Song",
+                "Ambient Sound Mode",
+                "Voice Assistant",
+                "Play Pause"
+              ]
+            },
+            "value": null
+          }
+        ],
+        [
+          "normalModeInCycle",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "transparencyModeInCycle",
+          {
+            "type": "toggle",
+            "value": true
+          }
+        ],
+        [
+          "noiseCancelingModeInCycle",
+          {
+            "type": "toggle",
+            "value": true
+          }
+        ],
+        [
+          "resetButtonsToDefault",
+          {
+            "type": "action"
+          }
+        ]
+      ]
+    ],
+    [
+      "limitHighVolume",
+      [
+        [
+          "limitHighVolume",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "limitHighVolumeDbLimit",
+          {
+            "type": "i32Range",
+            "setting": {
+              "start": 75,
+              "end": 100,
+              "step": 5
+            },
+            "value": 95
+          }
+        ],
+        [
+          "limitHighVolumeRefreshRate",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "RealTime",
+                "10s",
+                "1m"
+              ],
+              "localizedOptions": [
+                "Real Time",
+                "\u206810\u2069 seconds",
+                "\u20681\u2069 minute"
+              ]
+            },
+            "value": "RealTime"
+          }
+        ]
+      ]
+    ],
+    [
+      "miscellaneous",
+      [
+        [
+          "ldac",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "touchTone",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "gamingMode",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "soundLeakCompensation",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "surroundSound",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "autoPlayPause",
+          {
+            "type": "toggle",
+            "value": false
+          }
+        ],
+        [
+          "wearingTone",
+          {
+            "type": "toggle",
+            "value": true
+          }
+        ],
+        [
+          "touchLock",
+          {
+            "type": "toggle",
+            "value": true
+          }
+        ],
+        [
+          "lowBatteryPrompt",
+          {
+            "type": "toggle",
+            "value": true
+          }
+        ],
+        [
+          "autoPowerOff",
+          {
+            "type": "select",
+            "setting": {
+              "options": [
+                "disabled",
+                "10m",
+                "20m",
+                "30m",
+                "60m"
+              ],
+              "localizedOptions": [
+                "Disabled",
+                "\u206810\u2069 minutes",
+                "\u206820\u2069 minutes",
+                "\u206830\u2069 minutes",
+                "\u206860\u2069 minutes"
+              ]
+            },
+            "value": "30m"
+          }
+        ]
+      ]
+    ]
+  ]
+}

@@ -17,6 +17,10 @@ modules beside the code.
 - `just snap` — headless render of that snapshot to `/tmp/rune-soundcore.png`. Run `just probe`
   first, or point `RUNE_SOUNDCORE_SNAPSHOT` at a snapshot; with no file the page shows a load
   error.
+- `just screenshots` — re-renders the README images (2× scale) from
+  `docs/screenshots/snapshot.json`, a synthetic fixture with no real serial or MAC. Any run with
+  `RUNE_SOUNDCORE_SNAPSHOT` set skips the Bluetooth worker, so it never touches real earbuds and
+  the sidebar reads Connected.
 - `RUNE_SOUNDCORE_PAGE=<category>` picks the page for a headless render, using the camelCase
   `CategoryId` (`soundModes`, `equalizer`, `buttonConfiguration`, …, see the snapshot JSON).
 - `RUNE_SOUNDCORE_PROBE_WRITE=1 just probe` toggles `TouchTone` on the real device and restores it.

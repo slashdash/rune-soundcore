@@ -21,6 +21,15 @@ its model on the Devices page.
 
 Not included in v1: EQ profile import/export, quick presets, firmware updates, account features.
 
+## Screenshots
+
+Rendered from a sample snapshot with `just screenshots`, so no real device data.
+
+| | |
+|---|---|
+| ![Sound modes](docs/screenshots/sound-modes.png) | ![Equalizer](docs/screenshots/equalizer.png) |
+| ![Button configuration](docs/screenshots/button-configuration.png) | ![Miscellaneous](docs/screenshots/miscellaneous.png) |
+
 ## Run it
 
 ```sh

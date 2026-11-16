@@ -54,6 +54,14 @@ check:
 test:
     cargo test
 
+# Re-render the README screenshots from the sanitized fixture (no hardware needed).
+screenshots:
+    for pair in soundModes:sound-modes equalizer:equalizer buttonConfiguration:button-configuration miscellaneous:miscellaneous; do \
+        page=${pair%%:*}; name=${pair##*:}; \
+        RUNE_SOUNDCORE_SNAPSHOT=docs/screenshots/snapshot.json RUNE_SOUNDCORE_PAGE=$page \
+        cargo run --quiet -- --scale 2 --snap docs/screenshots/$name.png; \
+    done
+
 # Point this clone at the anonymous identity and the repo's commit guard.
 git-setup:
     git config user.name slashdash

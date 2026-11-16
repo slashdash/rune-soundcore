@@ -49,6 +49,12 @@ fn main() {
         .init(move || AppState::new(tx))
         .standard_menus();
     let handle = app.handle();
-    bt::spawn(handle, rx, probe);
+    // A saved snapshot renders offline, so don't touch the real earbuds from a snapshot run.
+    let offline = std::env::var_os("RUNE_SOUNDCORE_SNAPSHOT").is_some() && !probe;
+    if offline {
+        drop(rx);
+    } else {
+        bt::spawn(handle, rx, probe);
+    }
     app.run();
 }
